@@ -1,0 +1,99 @@
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="CV.css" type="text/css">
+<link rel="stylesheet" href="bootstrap.css" type="text/css">
+</head>
+
+<body>
+<header>
+         <h1 id="tit1"> CV di Ciampaglia Ludovico </h1>
+         <a href="https://www.itisgalilei.edu.it/" target="_blank">		 
+         <img src="logo-polo-tecnologico.png" alt="Logo scuola" class="logo">
+		 </a>
+</header>
+
+<nav class="navbar navbar-expand navbar-dark bg-dark custom-navbar" aria-label="Second navbar example">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <!-- Link sinistra -->
+    <h4 id="sito" class="navbar-title">
+      <a href="https://www.itisgalilei.edu.it/" target="_blank" class="nav-link-custom">Vai al sito della scuola</a>
+    </h4>
+
+    <!-- Link centrale -->
+    <div class="center-nav">
+      <a href="contattami.html" class="nav-link-custom">Contatti</a>
+    </div>
+
+    <!-- Link destra -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarsExample02">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="" class="nav-link-custom">Altro</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<nav id="navbar">
+    <h6 id="app"> <a href="conoscenze.html"> Conoscenze <br> informatiche <br> e di lingua</a> <img src="computer.jpg" alt="Logo scuola" id="logov"></h6>
+    <h6 id="studi"> <a href="volontariato.html"> Volontariato </a> <img src="volontariatoim.png" alt="Logo scuola" id="logot"> </h6>
+    
+	<div id="tweets">
+        <!-- dove si vedranno i tweet -->
+    </div>
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	
+	<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Crea un'ancora che punta al profilo di @TheHackersNews su Twitter
+            var anchor = document.createElement("a");
+            anchor.setAttribute("class", "twitter-timeline");
+            anchor.setAttribute("href", "https://twitter.com/TheHackersNews");
+            anchor.setAttribute("data-width", "250");
+            anchor.setAttribute("data-height", "300");
+            anchor.setAttribute("data-tweet-limit", "5"); // Limita a 5 tweet
+
+            // Aggiungi l'elemento al div #tweets
+            document.getElementById("tweets").appendChild(anchor);
+
+            // Ricarica il widget per incorporare i tweet
+            twttr.widgets.load();
+        });
+    </script>
+</nav>
+
+
+<div>
+<table id="info">
+                   <tr> <td> Ciampaglia Ludovico </td> </tr>
+                   <tr> <td> Data di nascita: 17/12/2007 </td> </tr>
+				   <tr> <td> Luogo di nascita: Roma </td> </tr>
+                   <tr> <td> Nazionalità: Italiana </td> </tr>
+                   <tr> <td> Sesso: Maschio </td> </tr>
+</table>
+</div>
+
+<h1 id="tit2"> Istruzione e Formazioni </h1>
+
+<ul type="disc" id="stilelista1">
+                 <li> Studente di ITIS indirizzo informatica e telecomunicazioni presso Galileo Galilei </li>
+				 <li> Esperienza lavorativa luglio 2024: cameriere presso ristorante Picchio a Fontana di Trevi </li>
+				 <li> Corso di Etica presso Universita Gregoriana </li>
+				 <li> Medie: Francesco Baracca </li>
+				 <li> Elementari: dal secondo al quinto anno presso la Feraironi, 1 anno alla scuola privata Cabrini </li>
+</ul>
+
+<footer id="pi">
+        <p>Autorizzo il trattamento dei miei dati personali presenti nel CV ai sensi dell’art. 13 d. lgs. 30 giugno 2003 n. 196 - “Codice in materia di protezione dei dati personali” e dell’art. 13 GDPR 679/16 - “Regolamento europeo sulla protezione dei dati personali”.</p>
+        <p>Ultima modifica: </p>
+</footer>
+</body>
+</html>
